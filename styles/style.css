@@ -63,6 +63,76 @@ span{
     height: 40px;
 }
 
+/* header section  */
+.header-container{
+    display: flex;
+    
+    gap: 160px;
+    width: 100%;
+    height: 80vh;
+}
+.header-left{
+    background-image: url('../images/Group\ 14.png');
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    padding: 135px 200px 145px 150px;
+    text-align: center;
+    
+ }
+ .header-text{
+    color: #534C64;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.play-like-the{
+    color: #0B0223;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.goat{
+    text-align: center;
+    font-size: 4.3rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 24px;
+}
+.header-photo{
+    height: 95%;
+    padding-top: 23px;
+}
+.headerbtn-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.primary-btn{
+    border-radius: 48px;
+    background: #FF42A5;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 21px 40px;
+    border: 0px;
+}
+.secondry-btn{
+    border-radius: 48px;
+    background: #4EC5F7;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 21px 40px;
+    border: 0px;
+}
+
 
 
 
@@ -70,7 +140,8 @@ span{
 /* responsive mobile device */
 @media screen and (max-width: 576px) {
     .nav-container,
-    .right-container
+    .right-container,
+    .header-container
     {
         flex-direction: column;
     }
@@ -90,6 +161,15 @@ span{
     .right-nav-text{
         font-size: 1rem;
     }
+    .header-right, .header-left{
+        width: 100%;
+    }
+    .header-left{
+        margin-top: 119px;
+    }
+    .nav-container{
+        margin-left: 200px;
+    }
 }
 
 
@@ -97,9 +177,17 @@ span{
 
 /* responsive tablet device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .nav-container{
+    .nav-container, .header-container{
         flex-direction: column;
+        
+    }
+    .nav-container{
         gap: 40px;
         margin-top: 50px;
+        margin-left: 100px;
     }
+    .header-container{
+        margin-left: 50px;
+    }
+    
 }
