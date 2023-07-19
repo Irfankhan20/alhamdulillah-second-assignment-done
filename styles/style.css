@@ -67,20 +67,20 @@ span{
 .header-container{
     display: flex;
     
-    gap: 160px;
+    gap: 90px;
     width: 100%;
     height: 80vh;
 }
 .header-left{
     background-image: url('../images/Group\ 14.png');
     fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    padding: 135px 200px 145px 150px;
-    text-align: center;
+    padding: 135px 200px 145px 170px;
+    
     
  }
  .header-text{
     color: #534C64;
-    text-align: center;
+    
     font-size: 1.25rem;
     font-weight: 500;
     padding-bottom: 15px;
@@ -88,12 +88,12 @@ span{
 
 .play-like-the{
     color: #0B0223;
-    text-align: center;
+    
     font-size: 2.5rem;
     font-weight: 600;
 }
 .goat{
-    text-align: center;
+    
     font-size: 4.3rem;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -105,10 +105,11 @@ span{
 .header-photo{
     height: 95%;
     padding-top: 23px;
+    margin-right: 130px;
 }
 .headerbtn-container{
     display: flex;
-    align-items: center;
+    
     gap: 20px;
     padding-top: 20px;
 }
@@ -132,6 +133,67 @@ span{
     padding: 21px 40px;
     border: 0px;
 }
+/* main section  */
+/* we are gamer section  */
+.main-wegamer-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    height: 600px;
+    width: 100%;
+}
+
+.we-gamer-container{
+    display: flex;
+    height: 550px;
+    padding-top: 60px;
+    width: 80%;
+    align-items: center;
+    padding-left: 150px;
+
+}
+.gaming-carecter{
+    width: 700px;
+    height: 93%;
+}
+
+.we-gamer-content{
+    align-items: center;
+}
+.wegamer-title{
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 24px;
+}
+.wegamer-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+.know-btn{
+    text-align: right;
+    margin-top: 30px;
+}
+.gamer-purpose{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 20px;
+    line-height: 45px;
+ 
+}
+.proverbs{
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+}
 
 
 
@@ -142,6 +204,7 @@ span{
     .nav-container,
     .right-container,
     .header-container
+    
     {
         flex-direction: column;
     }
@@ -170,6 +233,14 @@ span{
     .nav-container{
         margin-left: 200px;
     }
+    .we-gamer-container{
+        flex-direction: column-reverse;
+        margin-top: 1744px;
+        margin-left: 63px;
+    }
+    .gaming-carecter{
+        padding-right: 134px;
+    }
 }
 
 
@@ -181,6 +252,10 @@ span{
         flex-direction: column;
         
     }
+    .we-gamer-container{
+        flex-direction: column-reverse;
+        margin-top: 1400px;
+    }
     .nav-container{
         gap: 40px;
         margin-top: 50px;
@@ -188,6 +263,7 @@ span{
     }
     .header-container{
         margin-left: 50px;
+
     }
     
 }
