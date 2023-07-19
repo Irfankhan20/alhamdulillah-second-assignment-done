@@ -88,7 +88,6 @@ span{
 
 .play-like-the{
     color: #0B0223;
-    
     font-size: 2.5rem;
     font-weight: 600;
 }
@@ -109,6 +108,7 @@ span{
 }
 .headerbtn-container{
     display: flex;
+
     
     gap: 20px;
     padding-top: 20px;
@@ -118,10 +118,11 @@ span{
     background: #FF42A5;
     text-align: center;
     color: #FFF;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: 21px 40px;
     border: 0px;
+    text-transform: uppercase;
 }
 .secondry-btn{
     border-radius: 48px;
@@ -147,7 +148,7 @@ span{
     padding-top: 60px;
     width: 80%;
     align-items: center;
-    padding-left: 150px;
+    margin: 0 auto;
 
 }
 .gaming-carecter{
@@ -194,6 +195,251 @@ span{
     font-weight: 700;
     line-height: 45px;
 }
+/* gamelist-container */
+.gamelist-section {
+    width: 100%;
+    padding: 50px 0;
+}
+.gamelist-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.gamelist-container h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.gamelist-images{
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.game-image {
+    position: relative;
+    display: inline-block;
+}
+
+.game-image img {
+    width: 242px;
+    height: 300px;
+    padding-bottom: 10px;
+    transition: filter 0.3s ease;
+}
+
+.game-image:hover img {
+    filter: brightness(50%); 
+}
+
+.game-image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/play-button\ 1.png); 
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.game-image:hover::after {
+    opacity: 1;
+}
+
+.game-image p {
+    position: relative;
+    z-index: 1;
+    color: black; 
+    transition: color 0.3s ease; 
+}
+
+
+
+.game-image img{
+    width: 242px;
+    height: 300px;
+    padding-bottom: 10px;
+
+}
+/* playinstant-section */
+.playinstant-section {
+    width: 100%;
+    padding: 50px 0;
+}
+.playinstant-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    text-align: right;
+}
+.playinstant-left h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.main-image{
+    position: relative;
+}
+.main-image>img{
+    width: 100%;
+}
+.secondary-image{
+    position: absolute;
+    bottom: -60px;
+    left:-100px;
+    width: 50%;
+}
+/* play online games section  */
+.play-games-online {
+    width: 100%;
+    padding: 100px 0;
+}
+.online-games-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    text-align: left;
+}
+.online-game-right h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.main-image{
+    position: relative;
+}
+.main-image>img{
+    width: 100%;
+}
+.secondary-image{
+    position: absolute;
+    bottom: -60px;
+    left:-100px;
+    width: 50%;
+}
+
+
+/* games-chennel  */
+.chennel-section{
+    width: 100%;
+    padding: 50px 0;
+background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);}  
+.chennel-container-forfive{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.chennel-container-forfive{
+    display: grid;
+    gap:20px;
+
+    grid-template-columns: repeat(5,1fr);
+ 
+}
+.chennel-container-forfour{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 70px;
+}
+.chennel-container-forfour{
+    display: grid;
+    gap:20px;
+
+    grid-template-columns: repeat(4,1fr);
+ 
+}
+.games-chennel{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  gap: 10px;
+  border: 2px solid white;
+}
+.games-chennel p{
+    font-weight: bold;
+}
+.games-chennel:hover p{
+    color: #F948B2;
+}
+.games-chennel:hover{
+
+ border: 2px solid #F948B2;
+}
+.games-chennel img{
+ width: 25%;
+}
+
+/* footer section  */
+.footer-section{
+    width: 100%;
+    background: #0B0223;
+    color: #FFF;
+    
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding-top: 120px;
+    padding-bottom: 56px;
+}
+.footer-logo-name{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.footer-description-first{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 56px;
+}
+.footer-icon-photo{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 64px;
+    color: #FFFFFF;
+}
+.footer-description-second{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 28px;
+}
+.footer-description-last{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 130px;
+}
+
+
+
+
+
 
 
 
